@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+/* Style Css realizado por Rafael Rios Alvarez - IES Martin Rivero - 2DAW */
+
+body 
+	{ 
+		font-family: trebuchet ms, verdana, sans-serif;
+		font-size: 12px;
+		line-height: 1.5em; 
+		color: #333; 
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		/* Ubicación de la imagen */ /* Y Propiedades CSS3 para que se ajuste de manera correcta*/
+	  background-image: url(images/background.jpg);
+
+	  background-position: center center;
+
+	  background-repeat: no-repeat;
+
+	  background-attachment: fixed;
+
+	  background-size: cover;
+
+	  background-color: #464646;
+	}
+
+p 
+	{ 
+		margin-top: 0px; 
+		padding-bottom:0;
+    	padding-left: 2em;
+   		padding-right:0.2em;
+	}
+	
+h3 
+	{ 
+		font: bold 140% trebuchet ms;
+		letter-spacing: -1px; 
+		margin-bottom: 0; 
+		color: #BF8A00;
+		padding-left: 3em;
+    	padding-top: 1em;
+	}
+	
+a:link 
+	{ 
+		text-decoration: none;
+		border-bottom: 1px dotted #369; 
+		color: #369;
+	}
+	
+a:visited 
+	{ 
+		text-decoration: none;
+		border-bottom: 1px dotted #369; 
+		color: #369;
+	}
+	
+a:hover, a:active 
+	{ 
+		text-decoration: none;
+		border-bottom: 1px solid #036; 
+		color: #036;
+	}
+
+/* ---(Divs, y partes modificadas)----------------------------- */
+
+.page-wrapper 
+	{
+		position: relative;
+		background: url(images/fondobody.jpg) repeat-y 0 92px;
+		margin: 0 auto 10px auto;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+		text-align: left;
+ 		width: 800px;
+		box-shadow: 5px 5px 3px #333;
+		-webkit-box-shadow: 5px 5px 3px #333;
+		-moz-box-shadow: 5px 5px 3px #333;
+		opacity:0.85;
+	}
+
+header
+	{
+		height: 92px;
+		background: url(images/top.jpg) no-repeat top left;
+	}
+
+header h1
+	{ 
+		display: none;	
+	}
+	
+header h2 
+	{ 
+		position: absolute;
+		top: 110px;
+		left: 20px;
+		padding: 0;
+		margin: 0;
+		background: url(images/tagline.jpg) no-repeat top left;
+		width: 528px;
+		height: 74px;
+
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+/* ---( Clases modificadas..)---------------------------- */
+
+.summary 
+	{
+		position: absolute;
+		top: 92px;
+		right: 0;
+		left: auto;
+		z-index: 2;
+		width: 298px; 
+  		voice-family: "\"}\""; 
+  		voice-family:inherit;
+ 		width: 300px;
+	}
+
+html>body .summary
+	{
+  		width: 300px;
+	} 
+
+.summary p 
+	{
+		margin: 15px 15px 15px 15px; 
+		font-style: italic;
+		font-size: 140%; 
+		font-family: "trebuchet ms";
+		font-weight: bold;
+		line-height: 1.5em;
+		color: #000000;
+	}
+
+.summary p:last-child 
+	{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 100%;
+		margin-top: 0;
+	}
+
+.preamble 
+	{
+		margin: 104px 340px 0px 20px;
+		background:url(images/preamble.jpg);
+		box-shadow: 3px 3px 4px gray;
+	}
+	
+.explanation
+	{
+		background:url(images/explanation.jpg);
+		box-shadow: 3px 3px 4px gray;
+	}
+.benefits
+	{
+		background:url(images/benefits.jpg);
+		box-shadow: 3px 3px 4px gray;
+	}
+.participation
+	{
+		background:url(images/participation.jpg);
+		box-shadow: 3px 3px 4px gray;
+	}
+.requirements
+	{
+		background:url(images/requirements.jpg);
+		box-shadow: 3px 3px 4px gray;
+	}
+	
+.supporting 
+	{
+		padding-left: 20px; 
+		margin: 0 350px 40px 0;
+	}
+
+footer 
+	{ 
+		border-top: 1px dotted #CDC4AC;
+		padding-top: 6px;
+		text-align: center;
+	}
+	
+footer a:link, footer a:visited 
+	{ 
+		margin-right: 6px;
+	}
+
+/* ---(Barra de Navegacion Derecha..)----------------------------- */
+
+.sidebar 
+	{
+		position: absolute; 
+		top: 92px; 
+		right: 0;
+		left: auto;
+		width: 300px;
+		padding: 0;
+		background: url(images/sidebar.png) no-repeat;
+		z-index: 1;
+	}
+	
+.sidebar .wrapper 
+	{ 
+		margin: 190px 15px 15px 15px; 
+	}
+
+.sidebar h3
+	{
+		color: #000000;
+		font-family: trebuchet ms;
+		font-size: 120%;
+		margin: 0 0 6px 0;
+		padding: 0;
+	}	
+	
+.sidebar ul
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+.sidebar li
+	{
+		display: block; 
+		margin-bottom: 2px;
+		padding-left: 14px;
+		list-style-type: none;
+		color:#F5EE29;
+	}
+	
+.sidebar li a:link
+	{ 
+		color: #EDF08D;
+		border-bottom: none;
+	}
+	
+.sidebar li a:visited
+	{
+		color: #c96;
+		border-bottom: none;
+	}
+	
+.sidebar li a:hover
+	{
+		color: #963;
+	}
+
+
+
+
+.design-selection
+	{
+		padding: 12px 0 12px 0;
+		border-top: 1px dashed #CDC4AC;
+		border-bottom: 1px dashed #CDC4AC;
+	}
+	
+.zen-resources
+	{
+		margin-top: 12px;
+	}
